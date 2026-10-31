@@ -1,0 +1,31 @@
+<div class="announcement-bar" role="region" aria-label="Announcement">
+  <div class="announcement-bar__inner">
+    <div class="announcement-bar__utility">
+      <span class="currency-indicator">🇺🇸 USD ($)</span>
+      <span>•</span>
+      <span>Ships to United States</span>
+    </div>
+
+    <div class="announcement-bar__message">
+      {{ section.settings.text | default: "Free US shipping over $100 · Duties included · 30-day returns" }}
+    </div>
+
+    <div class="announcement-bar__utility">
+      <a href="/pages/shipping-returns" class="text-inverse-muted">Duties & Returns FAQ</a>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Announcement Bar",
+  "settings": [
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Announcement Text",
+      "default": "Free US shipping over $100 · Duties included · 30-day returns"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,84 @@
+<div id="CartDrawer" class="cart-drawer" role="dialog" aria-modal="true" aria-label="Your Bag">
+  <div class="cart-drawer__header">
+    <h3 class="cart-drawer__title">
+      Your Bag
+      <span class="cart-drawer__count cart-count-badge">{{ cart.item_count | default: 1 }}</span>
+    </h3>
+    <button type="button" class="cart-drawer__close" aria-label="Close cart">
+      {% render 'icon-close' %}
+    </button>
+  </div>
+
+  <!-- Free US Shipping Threshold Progress -->
+  <div class="cart-shipping-bar" id="CartShippingBar">
+    <div class="cart-shipping-bar__text">
+      You're only <strong>$0.00 USD</strong> away from Free US Shipping!
+    </div>
+    <div class="cart-shipping-bar__track">
+      <div class="cart-shipping-bar__progress" style="width: 100%;"></div>
+    </div>
+  </div>
+
+  <div class="cart-drawer__body">
+    <!-- Dynamic Cart Items Container -->
+    <div class="cart-items" id="CartItemsList">
+      <!-- Items dynamically populated via global.js / Section Rendering API -->
+    </div>
+
+    <!-- Gift Wrap Option -->
+    <div class="cart-addons">
+      <label class="gift-wrap-toggle">
+        <input type="checkbox" id="GiftWrapCheckbox">
+        <div>
+          <strong>Add Signature Gift Box & Handwritten Note (+$5.00)</strong>
+          <div class="text-muted" style="font-size: 11px;">Arrives ready to gift with wax seal ribbon and personalized card.</div>
+        </div>
+      </label>
+      <textarea id="GiftMessageBox" class="gift-message-box" placeholder="Write your personalized gift message here..." rows="2"></textarea>
+    </div>
+
+    <!-- In-Cart Cross-Sell -->
+    <div class="cart-upsell">
+      <img src="{{ 'cat-necklaces.jpg' | asset_url }}" alt="Silver Polishing Cloth" class="cart-upsell__thumb">
+      <div class="cart-upsell__info">
+        <div class="cart-upsell__title">Microfiber Silver Polishing Cloth</div>
+        <div class="text-muted">$12.00 USD</div>
+      </div>
+      <button 
+        type="button" 
+        class="cart-upsell__btn"
+        onclick="window.Iraya && window.Iraya.addItem({id: 201, title: 'Silver Polishing Cloth', variant: 'Standard', price: 12.00, image: 'assets/images/cat-necklaces.jpg'})"
+      >
+        + Add
+      </button>
+    </div>
+  </div>
+
+  <div class="cart-drawer__footer">
+    <div class="cart-subtotal">
+      <span class="cart-subtotal__label">Estimated Total</span>
+      <span class="cart-subtotal__value" id="CartSubtotalValue">$185.00 USD</span>
+    </div>
+
+    <div class="cart-duties-note">
+      <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+      <span>US Import Duties, Taxes & Free Shipping Included</span>
+    </div>
+
+    <button type="button" class="btn btn--primary btn--full cart-checkout-btn" onclick="alert('Redirecting to secure Shopify US Checkout...');">
+      Proceed to US Checkout
+    </button>
+
+    <div class="cart-accelerated-payment">
+      <span>Guaranteed Safe Checkout:</span>
+      <strong>Shop Pay</strong> · <strong>Apple Pay</strong> · <strong>PayPal</strong>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Cart Drawer",
+  "settings": []
+}
+{% endschema %}

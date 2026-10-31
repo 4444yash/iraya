@@ -1,0 +1,31 @@
+{%- comment -%}
+  Renders the mobile sticky Add to Cart bar.
+  Accepts:
+  - product: {Object} Product Liquid object
+  - current_variant: {Object} Selected variant
+{%- endcomment -%}
+
+<div id="StickyMobileBar" class="sticky-mobile-bar" data-product-handle="{{ product.handle }}">
+  <div class="sticky-bar__inner">
+    <div class="sticky-bar__media">
+      {%- if product.featured_image -%}
+        <img src="{{ product.featured_image | image_url: width: 100 }}" alt="{{ product.title | escape }}" class="sticky-bar__thumb" width="42" height="42">
+      {%- else -%}
+        <img src="{{ 'cat-necklaces.jpg' | asset_url }}" alt="{{ product.title | escape }}" class="sticky-bar__thumb" width="42" height="42">
+      {%- endif -%}
+      <div class="sticky-bar__info">
+        <span class="sticky-bar__title">{{ product.title | default: "The Aahana Filigree Choker" | truncate: 22 }}</span>
+        <span class="sticky-bar__price" id="StickyBarPrice">{{ current_variant.price | default: 18500 | money }} USD</span>
+      </div>
+    </div>
+    
+    <button 
+      type="button" 
+      id="StickyBarButton"
+      class="btn btn--primary sticky-bar__cta"
+      onclick="const mainBtn = document.getElementById('MainProductCTA'); if (mainBtn) mainBtn.click(); else window.Iraya.openCartDrawer();"
+    >
+      <span>{{ 'products.product.add_to_cart' | t | default: 'Add to Bag' }}</span>
+    </button>
+  </div>
+</div>

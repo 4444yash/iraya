@@ -1,0 +1,34 @@
+<section class="section-spacing" id="FeaturedCollection-{{ section.id }}">
+  <div class="page-width">
+    <div class="lookbook-split">
+      <div class="lookbook-banner">
+        <img src="{{ 'hero-editorial.jpg' | asset_url }}" alt="Editorial Lookbook" loading="lazy">
+      </div>
+
+      <div class="lookbook-content" style="display: flex; flex-direction: column; justify-content: center;">
+        <span class="section-eyebrow">Editorial Lookbook</span>
+        <h2 class="section-title">The Moonlit Jaipur Capsule</h2>
+        <p class="section-description" style="margin-bottom: 24px;">
+          An homage to Rajasthan's nocturnal courtyards. Sculptural silver chokers and light-catching jaali hoops, oxidized to reveal depth and finished with anti-tarnish micro-coating for effortless daily wear.
+        </p>
+
+        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+          <a href="/collections/jaipur-capsule" class="btn btn--primary">Explore the Lookbook</a>
+          <a href="/collections/all" class="btn btn--secondary">Shop All Silver</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Featured Collection",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Featured Collection"
+    }
+  ]
+}
+{% endschema %}

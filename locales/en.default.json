@@ -1,0 +1,41 @@
+{
+  "general": {
+    "search": "Search jewellery...",
+    "close": "Close",
+    "back": "Back",
+    "menu": "Menu",
+    "currency": "USD ($)"
+  },
+  "announcement": {
+    "default_text": "Free US shipping over $100 · Duties included · 30-day returns"
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "Add to Bag",
+      "buy_now": "Buy with Shop Pay",
+      "sold_out": "Sold Out",
+      "unavailable": "Unavailable",
+      "quantity": "Quantity",
+      "in_stock": "In Stock — Ready to Ship to US",
+      "craft_origin": "Handcrafted 925 Sterling Silver",
+      "duties_included": "Taxes & Duties Included",
+      "size_guide": "Size Guide"
+    }
+  },
+  "cart": {
+    "title": "Your Bag",
+    "empty": "Your bag is currently empty",
+    "subtotal": "Subtotal",
+    "checkout": "Proceed to Checkout",
+    "taxes_and_shipping_policy_at_checkout_html": "Taxes and US shipping calculated at checkout",
+    "free_shipping_progress": "You're only {{ amount }} away from Free US Shipping!",
+    "free_shipping_unlocked": "You have unlocked Free US Shipping!",
+    "gift_wrap": "Add Signature Gift Box & Handwritten Note (+$5.00)"
+  },
+  "collections": {
+    "filter_and_sort": "Filter & Sort",
+    "apply_filters": "Apply Filters",
+    "clear_all": "Clear All",
+    "product_count": "{{ count }} pieces"
+  }
+}

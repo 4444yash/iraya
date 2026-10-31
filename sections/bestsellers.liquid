@@ -1,0 +1,150 @@
+<section class="section-spacing" id="Bestsellers-{{ section.id }}" style="background-color: var(--color-bg-secondary);">
+  <div class="page-width">
+    <div class="section-header" style="display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+      <div>
+        <span class="section-eyebrow">Most Loved</span>
+        <h2 class="section-title">The Bestsellers</h2>
+      </div>
+      <a href="/collections/bestsellers" class="btn-link">View All Bestsellers →</a>
+    </div>
+
+    <div class="product-grid">
+      {%- assign collection = collections[section.settings.collection] -%}
+      {%- if collection.products.size > 0 -%}
+        {%- for product in collection.products limit: section.settings.products_to_show -%}
+          {% render 'product-card', product: product %}
+        {%- endfor -%}
+      {%- else -%}
+        <!-- Curated Fallback Mock Products for Immediate Preview -->
+        <div class="product-card">
+          <div class="product-card__media">
+            <a href="/products/aahana-filigree-choker">
+              <img src="{{ 'cat-necklaces.jpg' | asset_url }}" alt="The Aahana Filigree Choker" class="product-card__image-primary" loading="lazy">
+              <img src="{{ 'hero-editorial.jpg' | asset_url }}" alt="The Aahana on model" class="product-card__image-secondary" loading="lazy">
+            </a>
+            <div class="product-card__badges">
+              <span class="badge badge--gold">Bestseller</span>
+            </div>
+            <button type="button" class="product-card__quick-add" onclick="window.Iraya && window.Iraya.addItem({id: 101, title: 'The Aahana Filigree Choker', price: 185.00, image: 'assets/images/cat-necklaces.jpg'})">
+              + Quick Add to Bag
+            </button>
+          </div>
+          <div class="product-card__content">
+            <span class="product-card__craft-tag">925 Silver · Cuttack Filigree</span>
+            <h3 class="product-card__title"><a href="/products/aahana-filigree-choker">The Aahana Filigree Choker</a></h3>
+            <div class="product-card__rating">
+              <span style="color: #C5A880;">★★★★★</span>
+              <span>4.9 (84)</span>
+            </div>
+            <div class="product-card__price-row">
+              <span class="product-card__price">$185.00 USD</span>
+              <span class="product-card__hallmark">Hallmarked</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__media">
+            <a href="/products/chandrika-filigree-drops">
+              <img src="{{ 'cat-earrings.jpg' | asset_url }}" alt="Chandrika Filigree Drops" class="product-card__image-primary" loading="lazy">
+              <img src="{{ 'hero-editorial.jpg' | asset_url }}" alt="Chandrika on model" class="product-card__image-secondary" loading="lazy">
+            </a>
+            <div class="product-card__badges">
+              <span class="badge badge--gold">Bestseller</span>
+            </div>
+            <button type="button" class="product-card__quick-add" onclick="window.Iraya && window.Iraya.addItem({id: 102, title: 'Chandrika Filigree Drops', price: 135.00, image: 'assets/images/cat-earrings.jpg'})">
+              + Quick Add to Bag
+            </button>
+          </div>
+          <div class="product-card__content">
+            <span class="product-card__craft-tag">925 Silver · Tarakasi</span>
+            <h3 class="product-card__title"><a href="/products/chandrika-filigree-drops">Chandrika Filigree Drops</a></h3>
+            <div class="product-card__rating">
+              <span style="color: #C5A880;">★★★★★</span>
+              <span>5.0 (62)</span>
+            </div>
+            <div class="product-card__price-row">
+              <span class="product-card__price">$135.00 USD</span>
+              <span class="product-card__hallmark">Hallmarked</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__media">
+            <a href="/products/jaali-moonstone-ring">
+              <img src="{{ 'cat-rings.jpg' | asset_url }}" alt="The Jaali Moonstone Ring" class="product-card__image-primary" loading="lazy">
+              <img src="{{ 'craft-artisan.jpg' | asset_url }}" alt="Jaali Ring on hand" class="product-card__image-secondary" loading="lazy">
+            </a>
+            <button type="button" class="product-card__quick-add" onclick="window.Iraya && window.Iraya.addItem({id: 103, title: 'The Jaali Moonstone Ring', price: 110.00, image: 'assets/images/cat-rings.jpg'})">
+              + Quick Add to Bag
+            </button>
+          </div>
+          <div class="product-card__content">
+            <span class="product-card__craft-tag">925 Silver · Jaipur Cutwork</span>
+            <h3 class="product-card__title"><a href="/products/jaali-moonstone-ring">The Jaali Moonstone Ring</a></h3>
+            <div class="product-card__rating">
+              <span style="color: #C5A880;">★★★★★</span>
+              <span>4.9 (47)</span>
+            </div>
+            <div class="product-card__price-row">
+              <span class="product-card__price">$110.00 USD</span>
+              <span class="product-card__hallmark">Hallmarked</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__media">
+            <a href="/products/padma-oxidized-cuff">
+              <img src="{{ 'cat-bracelets.jpg' | asset_url }}" alt="Padma Oxidized Silver Cuff" class="product-card__image-primary" loading="lazy">
+              <img src="{{ 'hero-editorial.jpg' | asset_url }}" alt="Padma on model" class="product-card__image-secondary" loading="lazy">
+            </a>
+            <button type="button" class="product-card__quick-add" onclick="window.Iraya && window.Iraya.addItem({id: 104, title: 'Padma Oxidized Silver Cuff', price: 195.00, image: 'assets/images/cat-bracelets.jpg'})">
+              + Quick Add to Bag
+            </button>
+          </div>
+          <div class="product-card__content">
+            <span class="product-card__craft-tag">925 Silver · Antique Finish</span>
+            <h3 class="product-card__title"><a href="/products/padma-oxidized-cuff">Padma Oxidized Silver Cuff</a></h3>
+            <div class="product-card__rating">
+              <span style="color: #C5A880;">★★★★★</span>
+              <span>4.8 (39)</span>
+            </div>
+            <div class="product-card__price-row">
+              <span class="product-card__price">$195.00 USD</span>
+              <span class="product-card__hallmark">Hallmarked</span>
+            </div>
+          </div>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Bestsellers",
+  "settings": [
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    },
+    {
+      "type": "range",
+      "id": "products_to_show",
+      "min": 4,
+      "max": 8,
+      "step": 2,
+      "default": 4,
+      "label": "Products to show"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bestsellers"
+    }
+  ]
+}
+{% endschema %}

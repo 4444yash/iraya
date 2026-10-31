@@ -1,0 +1,79 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Iraya Luxury Indian Silver",
+    "theme_version": "1.0.0",
+    "theme_author": "Iraya Design Studio",
+    "theme_documentation_url": "https://github.com/4444yash/iraya",
+    "theme_support_url": "https://github.com/4444yash/iraya/issues"
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "color",
+        "id": "color_bg_primary",
+        "label": "Canvas Background",
+        "default": "#FAF8F5"
+      },
+      {
+        "type": "color",
+        "id": "color_text_primary",
+        "label": "Primary Text",
+        "default": "#121212"
+      },
+      {
+        "type": "color",
+        "id": "color_gold_accent",
+        "label": "Muted Gold Accent",
+        "default": "#C5A880"
+      },
+      {
+        "type": "color",
+        "id": "color_bg_dark",
+        "label": "Dark Surface",
+        "default": "#121212"
+      }
+    ]
+  },
+  {
+    "name": "US Shipping & Guarantees",
+    "settings": [
+      {
+        "type": "number",
+        "id": "free_shipping_threshold",
+        "label": "Free US Shipping Threshold ($ USD)",
+        "default": 100
+      },
+      {
+        "type": "text",
+        "id": "announcement_text",
+        "label": "Announcement Bar Text",
+        "default": "Free US shipping over $100 · Duties included · 30-day returns"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_duties_included_badge",
+        "label": "Show Duties Included Badge",
+        "default": true
+      }
+    ]
+  },
+  {
+    "name": "Mobile Ergonomics",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable_sticky_mobile_bar",
+        "label": "Enable Sticky Mobile Buy Bar on PDP",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_cart_drawer",
+        "label": "Enable AJAX Slide-Over Cart Drawer",
+        "default": true
+      }
+    ]
+  }
+]

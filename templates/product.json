@@ -1,0 +1,30 @@
+{
+  "name": "Default Product",
+  "wrapper": "div.pdp-page-wrapper",
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "settings": {}
+    },
+    "trust": {
+      "type": "trust-bar",
+      "settings": {}
+    },
+    "recommendations": {
+      "type": "bestsellers",
+      "settings": {
+        "products_to_show": 4
+      }
+    },
+    "reviews": {
+      "type": "customer-reviews",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "trust",
+    "recommendations",
+    "reviews"
+  ]
+}

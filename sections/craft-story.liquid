@@ -1,0 +1,43 @@
+<section class="craft-strip section-spacing" id="CraftStory-{{ section.id }}">
+  <div class="page-width">
+    <div class="craft-strip__grid">
+      <div class="craft-strip__media">
+        <img 
+          src="{{ 'craft-artisan.jpg' | asset_url }}" 
+          alt="Indian Master Silversmith Handcrafting 925 Silver Filigree" 
+          class="craft-strip__image"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="craft-strip__content">
+        <span class="section-eyebrow" style="color: var(--color-gold-accent);">Centuries of Reverence</span>
+        <h2 class="craft-strip__title">Every curve is bent by hand. No two pieces are ever identical.</h2>
+        
+        <p class="craft-strip__quote">
+          "In Cuttack and Jaipur, master silversmiths pull pure silver into threads finer than silk, twisting each scroll with tweezers over a gentle flame."
+        </p>
+
+        <p class="craft-strip__text">
+          We work directly with multi-generational artisanal workshops across India, ensuring living ethical wages, safe atelier conditions, and the preservation of rare techniques like <em>Tarakasi</em> (fine wire filigree) and <em>Meenakari</em> (enamel artistry). All pieces are rigorously assayed and stamped 925 sterling silver.
+        </p>
+
+        <div>
+          <a href="/pages/our-craft" class="btn btn--gold">Discover Our Craft & Sourcing Standards →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Craft Story Strip",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Craft Story Strip"
+    }
+  ]
+}
+{% endschema %}

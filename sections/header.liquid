@@ -1,0 +1,166 @@
+<header class="site-header" id="SiteHeader">
+  <div class="header-inner">
+    <!-- Mobile Hamburger Toggle -->
+    <button type="button" class="mobile-nav-toggle" aria-label="Open navigation menu">
+      {% render 'icon-hamburger' %}
+    </button>
+
+    <!-- Brand Logo -->
+    <div class="site-logo">
+      <a href="/" class="site-logo__text">IRAYA</a>
+      <span class="site-logo__tagline">Fine Indian Silver</span>
+    </div>
+
+    <!-- Desktop Navigation (5-6 items) -->
+    <nav class="header-nav" aria-label="Primary">
+      <div class="nav-item nav-item--mega">
+        <a href="/collections/all" class="nav-link">
+          Shop
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor">
+            <path d="M1 1L5 5L9 1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+
+        <!-- Mega-Menu Dropdown -->
+        <div class="mega-menu">
+          <div class="mega-column">
+            <h4 class="mega-column__title">Categories</h4>
+            <ul class="mega-column__list">
+              <li><a href="/collections/earrings" class="mega-column__link">Earrings & Jhumkas</a></li>
+              <li><a href="/collections/necklaces" class="mega-column__link">Necklaces & Chokers</a></li>
+              <li><a href="/collections/rings" class="mega-column__link">Rings & Jaali Cutwork</a></li>
+              <li><a href="/collections/bracelets" class="mega-column__link">Bracelets & Kadas</a></li>
+              <li><a href="/collections/anklets" class="mega-column__link">Anklets (Payal)</a></li>
+            </ul>
+          </div>
+
+          <div class="mega-column">
+            <h4 class="mega-column__title">Shop By</h4>
+            <ul class="mega-column__list">
+              <li><a href="/collections/new-arrivals" class="mega-column__link">New Drops</a></li>
+              <li><a href="/collections/bestsellers" class="mega-column__link">Bestsellers</a></li>
+              <li><a href="/collections/under-100" class="mega-column__link">Under $100</a></li>
+              <li><a href="/collections/everyday" class="mega-column__link">Everyday Minimal</a></li>
+              <li><a href="/collections/statement" class="mega-column__link">Statement & Bridal</a></li>
+            </ul>
+          </div>
+
+          <div class="mega-column">
+            <h4 class="mega-column__title">Craft & Heritage</h4>
+            <ul class="mega-column__list">
+              <li><a href="/collections/filigree" class="mega-column__link">Tarakasi Filigree</a></li>
+              <li><a href="/collections/meenakari" class="mega-column__link">Meenakari Enamel</a></li>
+              <li><a href="/collections/oxidized" class="mega-column__link">Oxidized Temple Silver</a></li>
+              <li><a href="/collections/jadau" class="mega-column__link">Jadau Kundan Silver</a></li>
+            </ul>
+          </div>
+
+          <div class="mega-featured">
+            <img src="{{ 'hero-editorial.jpg' | asset_url }}" alt="Featured Collection" class="mega-featured__image">
+            <h4 class="mega-featured__title">The Monsoon Lotus Edit</h4>
+            <a href="/collections/featured" class="mega-featured__link">Explore Drop →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <a href="/collections" class="nav-link">Collections</a>
+      </div>
+
+      <div class="nav-item">
+        <a href="/collections/gifts" class="nav-link">Gifts</a>
+      </div>
+
+      <div class="nav-item">
+        <a href="/pages/our-craft" class="nav-link">Our Craft</a>
+      </div>
+
+      <div class="nav-item">
+        <a href="/blogs/journal" class="nav-link">Journal</a>
+      </div>
+    </nav>
+
+    <!-- Header Actions (Search, Account, Bag) -->
+    <div class="header-actions">
+      <button type="button" class="header-action-btn" aria-label="Search">
+        {% render 'icon-search' %}
+      </button>
+
+      <a href="/account/login" class="header-action-btn" aria-label="Account">
+        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+        </svg>
+      </a>
+
+      <button type="button" class="header-action-btn" data-cart-trigger aria-label="Shopping Bag">
+        {% render 'icon-cart' %}
+        <span class="cart-bubble cart-count-badge" id="CartIconBubble">{{ cart.item_count | default: 1 }}</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Off-Canvas Drawer -->
+<div id="MobileDrawer" class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+  <div class="mobile-drawer__header">
+    <div class="site-logo">
+      <span class="site-logo__text" style="font-size: 22px;">IRAYA</span>
+    </div>
+    <button type="button" class="mobile-drawer__close" aria-label="Close menu">
+      {% render 'icon-close' %}
+    </button>
+  </div>
+
+  <div class="mobile-drawer__content">
+    <ul class="mobile-nav__list">
+      <li class="mobile-nav__item">
+        <a href="/collections/all" class="mobile-nav__link">
+          Shop
+          <button type="button" class="mobile-nav__toggle-sub" aria-label="Expand Shop categories">+</button>
+        </a>
+        <div class="mobile-subnav">
+          <a href="/collections/earrings" class="mobile-subnav__link">Earrings & Jhumkas</a>
+          <a href="/collections/necklaces" class="mobile-subnav__link">Necklaces & Chokers</a>
+          <a href="/collections/rings" class="mobile-subnav__link">Rings</a>
+          <a href="/collections/bracelets" class="mobile-subnav__link">Bracelets & Kadas</a>
+          <a href="/collections/anklets" class="mobile-subnav__link">Anklets (Payal)</a>
+          <a href="/collections/under-100" class="mobile-subnav__link">Gifts Under $100</a>
+        </div>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="/collections" class="mobile-nav__link">Collections</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="/collections/gifts" class="mobile-nav__link">Gifts</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="/pages/our-craft" class="mobile-nav__link">Our Craft</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="/blogs/journal" class="mobile-nav__link">Journal</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="/pages/care-guide" class="mobile-nav__link">Silver Care Guide</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="/pages/size-guide" class="mobile-nav__link">US Size Guide</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="mobile-drawer__footer">
+    <div class="mobile-drawer__badge">
+      <span>🛡️ 925 Hallmarked Purity</span>
+      <span>•</span>
+      <span>🇺🇸 Free US Shipping >$100</span>
+    </div>
+    <a href="/account/login" class="btn btn--secondary btn--full btn--sm">Sign In / Account</a>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": []
+}
+{% endschema %}

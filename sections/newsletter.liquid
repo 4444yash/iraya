@@ -1,0 +1,33 @@
+<section class="newsletter-section" id="Newsletter-{{ section.id }}">
+  <div class="newsletter-inner">
+    <span class="section-eyebrow" style="color: var(--color-gold-accent);">Private Access</span>
+    <h2 class="section-title" style="color: #FFFFFF; font-size: clamp(1.8rem, 2.5vw, 2.4rem);">Join the Archival Circle</h2>
+    <p class="section-description" style="color: #B8B5AE;">
+      Receive early private access to one-of-a-kind artisan drops, craft journals, and invitations to our intimate US trunk shows.
+    </p>
+
+    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Iraya Archival Circle.');">
+      <input 
+        type="email" 
+        class="newsletter-input" 
+        placeholder="Enter your email address" 
+        required
+        aria-label="Email address"
+      >
+      <button type="submit" class="btn btn--gold">Request Access</button>
+    </form>
+    <p class="newsletter-note">We respect your inbox. Only rare drops and craft stories. Unsubscribe anytime.</p>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Newsletter",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Newsletter"
+    }
+  ]
+}
+{% endschema %}

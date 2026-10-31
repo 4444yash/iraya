@@ -1,0 +1,60 @@
+{
+  "name": "Homepage",
+  "sections": {
+    "hero": {
+      "type": "hero-banner",
+      "settings": {
+        "eyebrow": "Handcrafted in 925 Sterling Silver",
+        "heading": "Heirloom Indian Silver, Reimagined.",
+        "subheading": "Centuries-old artisanal filigree and temple craftsmanship meet quiet, modern silhouettes. Designed for everyday luxury in the United States.",
+        "button_text": "Shop the Collection",
+        "button_link": "/collections/all"
+      }
+    },
+    "categories": {
+      "type": "category-tiles",
+      "settings": {}
+    },
+    "bestsellers": {
+      "type": "bestsellers",
+      "settings": {
+        "products_to_show": 4
+      }
+    },
+    "craft_story": {
+      "type": "craft-story",
+      "settings": {}
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {}
+    },
+    "gifting": {
+      "type": "gifting-block",
+      "settings": {}
+    },
+    "trust_bar": {
+      "type": "trust-bar",
+      "settings": {}
+    },
+    "reviews": {
+      "type": "customer-reviews",
+      "settings": {}
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {}
+    }
+  },
+  "order": [
+    "hero",
+    "categories",
+    "bestsellers",
+    "craft_story",
+    "featured_collection",
+    "gifting",
+    "trust_bar",
+    "reviews",
+    "newsletter"
+  ]
+}

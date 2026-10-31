@@ -1,0 +1,63 @@
+<section class="section-spacing" id="CategoryTiles-{{ section.id }}">
+  <div class="page-width">
+    <div class="section-header text-center">
+      <span class="section-eyebrow">Curated Silhouettes</span>
+      <h2 class="section-title">Shop by Category</h2>
+      <p class="section-description">Pure 925 sterling silver, hallmarked and shaped by master metalsmiths across Rajasthan and Odisha.</p>
+    </div>
+
+    <div class="category-tiles-grid">
+      <!-- Earrings -->
+      <a href="/collections/earrings" class="category-tile">
+        <img src="{{ 'cat-earrings.jpg' | asset_url }}" alt="Earrings" class="category-tile__image" loading="lazy">
+        <div class="category-tile__overlay"></div>
+        <div class="category-tile__content">
+          <h3 class="category-tile__name">Earrings</h3>
+          <span class="category-tile__count">Filigree & Jhumkas →</span>
+        </div>
+      </a>
+
+      <!-- Necklaces -->
+      <a href="/collections/necklaces" class="category-tile">
+        <img src="{{ 'cat-necklaces.jpg' | asset_url }}" alt="Necklaces" class="category-tile__image" loading="lazy">
+        <div class="category-tile__overlay"></div>
+        <div class="category-tile__content">
+          <h3 class="category-tile__name">Necklaces</h3>
+          <span class="category-tile__count">Chokers & Layering Pendants →</span>
+        </div>
+      </a>
+
+      <!-- Rings -->
+      <a href="/collections/rings" class="category-tile">
+        <img src="{{ 'cat-rings.jpg' | asset_url }}" alt="Rings" class="category-tile__image" loading="lazy">
+        <div class="category-tile__overlay"></div>
+        <div class="category-tile__content">
+          <h3 class="category-tile__name">Rings</h3>
+          <span class="category-tile__count">Jaali & Statement Moonstone →</span>
+        </div>
+      </a>
+
+      <!-- Bracelets -->
+      <a href="/collections/bracelets" class="category-tile">
+        <img src="{{ 'cat-bracelets.jpg' | asset_url }}" alt="Bracelets & Kadas" class="category-tile__image" loading="lazy">
+        <div class="category-tile__overlay"></div>
+        <div class="category-tile__content">
+          <h3 class="category-tile__name">Bracelets</h3>
+          <span class="category-tile__count">Oxidized Cuffs & Bangles →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Category Tiles",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Category Tiles"
+    }
+  ]
+}
+{% endschema %}

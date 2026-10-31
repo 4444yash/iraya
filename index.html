@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <title>IRAYA — Heirloom Indian Silver Jewellery for Modern US Collectors</title>
+  <meta name="description" content="Discover handcrafted 925 sterling silver Indian jewellery in the USA. Certified hallmarked purity, hypoallergenic, anti-tarnish, and free express US delivery.">
+
+  <!-- Typography & Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Production Stylesheets -->
+  <link rel="stylesheet" href="assets/base.css">
+  <link rel="stylesheet" href="assets/component-header.css">
+  <link rel="stylesheet" href="assets/component-cart-drawer.css">
+  <link rel="stylesheet" href="assets/component-sections.css">
+  <link rel="stylesheet" href="assets/component-collection.css">
+  <link rel="stylesheet" href="assets/component-product.css">
+
+  <link rel="preload" as="image" href="assets/images/hero-editorial.jpg">
+</head>
+<body class="template-index">
+
+  <!-- 1. Announcement Bar -->
+  <div class="announcement-bar" role="region" aria-label="Announcement">
+    <div class="announcement-bar__inner">
+      <div class="announcement-bar__utility">
+        <span class="currency-indicator">🇺🇸 USD ($)</span>
+        <span>•</span>
+        <span>Ships to United States</span>
+      </div>
+
+      <div class="announcement-bar__message">
+        Free US shipping over $100 · Duties included · 30-day returns
+      </div>
+
+      <div class="announcement-bar__utility">
+        <a href="#trust" class="text-inverse-muted">Duties & Returns FAQ</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Header & Navigation -->
+  <header class="site-header" id="SiteHeader">
+    <div class="header-inner">
+      <button type="button" class="mobile-nav-toggle" aria-label="Open navigation menu">
+        <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+
+      <div class="site-logo">
+        <a href="index.html" class="site-logo__text">IRAYA</a>
+        <span class="site-logo__tagline">Fine Indian Silver</span>
+      </div>
+
+      <nav class="header-nav" aria-label="Primary">
+        <div class="nav-item nav-item--mega">
+          <a href="plp.html" class="nav-link">
+            Shop
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor">
+              <path d="M1 1L5 5L9 1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+
+          <!-- Mega-Menu -->
+          <div class="mega-menu">
+            <div class="mega-column">
+              <h4 class="mega-column__title">Categories</h4>
+              <ul class="mega-column__list">
+                <li><a href="plp.html?cat=earrings" class="mega-column__link">Earrings & Jhumkas</a></li>
+                <li><a href="plp.html?cat=necklaces" class="mega-column__link">Necklaces & Chokers</a></li>
+                <li><a href="plp.html?cat=rings" class="mega-column__link">Rings & Jaali Cutwork</a></li>
+                <li><a href="plp.html?cat=bracelets" class="mega-column__link">Bracelets & Kadas</a></li>
+                <li><a href="plp.html?cat=anklets" class="mega-column__link">Anklets (Payal)</a></li>
+              </ul>
+            </div>
+
+            <div class="mega-column">
+              <h4 class="mega-column__title">Shop By</h4>
+              <ul class="mega-column__list">
+                <li><a href="plp.html?filter=new" class="mega-column__link">New Drops</a></li>
+                <li><a href="plp.html?filter=bestsellers" class="mega-column__link">Bestsellers</a></li>
+                <li><a href="plp.html?filter=under100" class="mega-column__link">Under $100</a></li>
+                <li><a href="plp.html?filter=everyday" class="mega-column__link">Everyday Minimal</a></li>
+                <li><a href="plp.html?filter=statement" class="mega-column__link">Statement & Bridal</a></li>
+              </ul>
+            </div>
+
+            <div class="mega-column">
+              <h4 class="mega-column__title">Craft & Heritage</h4>
+              <ul class="mega-column__list">
+                <li><a href="our-craft.html#filigree" class="mega-column__link">Tarakasi Filigree</a></li>
+                <li><a href="our-craft.html#meenakari" class="mega-column__link">Meenakari Enamel</a></li>
+                <li><a href="our-craft.html#oxidized" class="mega-column__link">Oxidized Temple Silver</a></li>
+                <li><a href="our-craft.html#jadau" class="mega-column__link">Jadau Kundan Silver</a></li>
+              </ul>
+            </div>
+
+            <div class="mega-featured">
+              <img src="assets/images/hero-editorial.jpg" alt="Featured Collection" class="mega-featured__image">
+              <h4 class="mega-featured__title">The Monsoon Lotus Edit</h4>
+              <a href="plp.html" class="mega-featured__link">Explore Drop →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-item"><a href="plp.html" class="nav-link">Collections</a></div>
+        <div class="nav-item"><a href="#gifting" class="nav-link">Gifts</a></div>
+        <div class="nav-item"><a href="our-craft.html" class="nav-link">Our Craft</a></div>
+        <div class="nav-item"><a href="#reviews" class="nav-link">Journal</a></div>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="header-action-btn" aria-label="Search">
+          <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+          </svg>
+        </button>
+
+        <a href="pdp.html" class="header-action-btn" title="View PDP Sample" aria-label="Sample PDP">
+          <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+          </svg>
+        </a>
+
+        <button type="button" class="header-action-btn" data-cart-trigger aria-label="Shopping Bag">
+          <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+          </svg>
+          <span class="cart-bubble cart-count-badge" id="CartIconBubble">1</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Off-Canvas Drawer -->
+  <div id="MobileDrawer" class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-drawer__header">
+      <div class="site-logo">
+        <span class="site-logo__text" style="font-size: 22px;">IRAYA</span>
+      </div>
+      <button type="button" class="mobile-drawer__close" aria-label="Close menu">✕</button>
+    </div>
+
+    <div class="mobile-drawer__content">
+      <ul class="mobile-nav__list">
+        <li class="mobile-nav__item">
+          <a href="plp.html" class="mobile-nav__link">
+            Shop All Jewellery
+            <span class="text-gold" style="font-size: 14px;">→</span>
+          </a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="plp.html?cat=earrings" class="mobile-nav__link">Earrings & Jhumkas</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="plp.html?cat=necklaces" class="mobile-nav__link">Necklaces & Chokers</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="plp.html?cat=rings" class="mobile-nav__link">Rings & Jaali Cutwork</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="plp.html?cat=bracelets" class="mobile-nav__link">Bracelets & Cuffs</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="#gifting" class="mobile-nav__link">Gift Sets</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="our-craft.html" class="mobile-nav__link">Our Craft & Story</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mobile-drawer__footer">
+      <div class="mobile-drawer__badge">
+        <span>🛡️ 925 Hallmarked Purity</span>
+        <span>•</span>
+        <span>🇺🇸 Free US Shipping >$100</span>
+      </div>
+      <a href="plp.html" class="btn btn--primary btn--full btn--sm">Explore Collection</a>
+    </div>
+  </div>
+
+  <main id="MainContent">
+    <!-- Section 1: Hero Banner -->
+    <section class="hero-banner">
+      <div class="hero-banner__media">
+        <img 
+          src="assets/images/hero-editorial.jpg" 
+          alt="Iraya Indian Silver Jewellery" 
+          class="hero-banner__image"
+          loading="eager"
+          fetchpriority="high"
+        >
+        <div class="hero-banner__overlay"></div>
+      </div>
+
+      <div class="page-width">
+        <div class="hero-banner__content">
+          <span class="hero-eyebrow">Handcrafted in 925 Sterling Silver</span>
+          <h1 class="hero-title">Heirloom Indian Silver, Reimagined.</h1>
+          <p class="hero-subtitle">Centuries-old artisanal filigree and temple craftsmanship meet quiet modern silhouettes. Designed for everyday luxury in the United States.</p>
+          
+          <div class="hero-actions">
+            <a href="plp.html" class="btn btn--gold">Shop the Collection</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Shop by Category -->
+    <section class="section-spacing" id="categories">
+      <div class="page-width">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">Curated Silhouettes</span>
+          <h2 class="section-title">Shop by Category</h2>
+          <p class="section-description">Pure 925 sterling silver, hallmarked and shaped by master metalsmiths across Rajasthan and Odisha.</p>
+        </div>
+
+        <div class="category-tiles-grid">
+          <a href="plp.html?cat=earrings" class="category-tile">
+            <img src="assets/images/cat-earrings.jpg" alt="Earrings" class="category-tile__image" loading="lazy">
+            <div class="category-tile__overlay"></div>
+            <div class="category-tile__content">
+              <h3 class="category-tile__name">Earrings</h3>
+              <span class="category-tile__count">Filigree & Jhumkas →</span>
+            </div>
+          </a>
+
+          <a href="plp.html?cat=necklaces" class="category-tile">
+            <img src="assets/images/cat-necklaces.jpg" alt="Necklaces" class="category-tile__image" loading="lazy">
+            <div class="category-tile__overlay"></div>
+            <div class="category-tile__content">
+              <h3 class="category-tile__name">Necklaces</h3>
+              <span class="category-tile__count">Chokers & Layering Pendants →</span>
+            </div>
+          </a>
+
+          <a href="plp.html?cat=rings" class="category-tile">
+            <img src="assets/images/cat-rings.jpg" alt="Rings" class="category-tile__image" loading="lazy">
+            <div class="category-tile__overlay"></div>
+            <div class="category-tile__content">
+              <h3 class="category-tile__name">Rings</h3>
+              <span class="category-tile__count">Jaali & Statement Moonstone →</span>
+            </div>
+          </a>
+
+          <a href="plp.html?cat=bracelets" class="category-tile">
+            <img src="assets/images/cat-bracelets.jpg" alt="Bracelets & Kadas" class="category-tile__image" loading="lazy">
+            <div class="category-tile__overlay"></div>
+            <div class="category-tile__content">
+              <h3 class="category-tile__name">Bracelets</h3>
+              <span class="category-tile__count">Oxidized Cuffs & Bangles →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Bestsellers -->
+    <section class="section-spacing" id="shop" style="background-color: var(--color-bg-secondary);">
+      <div class="page-width">
+        <div class="section-header" style="display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+          <div>
+            <span class="section-eyebrow">Most Loved</span>
+            <h2 class="section-title">The Bestsellers</h2>
+          </div>
+          <a href="plp.html" class="btn-link">View All Bestsellers →</a>
+        </div>
+
+        <div class="product-grid">
+          <!-- Card 1 -->
+          <div class="product-card">
+            <div class="product-card__media">
+              <a href="pdp.html">
+                <img src="assets/images/cat-necklaces.jpg" alt="The Aahana Filigree Choker" class="product-card__image-primary" loading="lazy">
+                <img src="assets/images/hero-editorial.jpg" alt="The Aahana on model" class="product-card__image-secondary" loading="lazy">
+              </a>
+              <div class="product-card__badges">
+                <span class="badge badge--gold">Bestseller</span>
+              </div>
+              <button type="button" class="product-card__quick-add" onclick="window.Iraya.addItem({id: 101, title: 'The Aahana Filigree Choker', price: 185.00, image: 'assets/images/cat-necklaces.jpg'})">
+                + Quick Add to Bag
+              </button>
+            </div>
+            <div class="product-card__content">
+              <span class="product-card__craft-tag">925 Silver · Cuttack Filigree</span>
+              <h3 class="product-card__title"><a href="pdp.html">The Aahana Filigree Choker</a></h3>
+              <div class="product-card__rating">
+                <span style="color: #C5A880;">★★★★★</span>
+                <span>4.9 (84)</span>
+              </div>
+              <div class="product-card__price-row">
+                <span class="product-card__price">$185.00 USD</span>
+                <span class="product-card__hallmark">Hallmarked</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="product-card">
+            <div class="product-card__media">
+              <a href="pdp.html">
+                <img src="assets/images/cat-earrings.jpg" alt="Chandrika Filigree Drops" class="product-card__image-primary" loading="lazy">
+                <img src="assets/images/hero-editorial.jpg" alt="Chandrika on model" class="product-card__image-secondary" loading="lazy">
+              </a>
+              <div class="product-card__badges">
+                <span class="badge badge--gold">Bestseller</span>
+              </div>
+              <button type="button" class="product-card__quick-add" onclick="window.Iraya.addItem({id: 102, title: 'Chandrika Filigree Drops', price: 135.00, image: 'assets/images/cat-earrings.jpg'})">
+                + Quick Add to Bag
+              </button>
+            </div>
+            <div class="product-card__content">
+              <span class="product-card__craft-tag">925 Silver · Tarakasi</span>
+              <h3 class="product-card__title"><a href="pdp.html">Chandrika Filigree Drops</a></h3>
+              <div class="product-card__rating">
+                <span style="color: #C5A880;">★★★★★</span>
+                <span>5.0 (62)</span>
+              </div>
+              <div class="product-card__price-row">
+                <span class="product-card__price">$135.00 USD</span>
+                <span class="product-card__hallmark">Hallmarked</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="product-card">
+            <div class="product-card__media">
+              <a href="pdp.html">
+                <img src="assets/images/cat-rings.jpg" alt="The Jaali Moonstone Ring" class="product-card__image-primary" loading="lazy">
+                <img src="assets/images/craft-artisan.jpg" alt="Jaali Ring on hand" class="product-card__image-secondary" loading="lazy">
+              </a>
+              <button type="button" class="product-card__quick-add" onclick="window.Iraya.addItem({id: 103, title: 'The Jaali Moonstone Ring', price: 110.00, image: 'assets/images/cat-rings.jpg'})">
+                + Quick Add to Bag
+              </button>
+            </div>
+            <div class="product-card__content">
+              <span class="product-card__craft-tag">925 Silver · Jaipur Cutwork</span>
+              <h3 class="product-card__title"><a href="pdp.html">The Jaali Moonstone Ring</a></h3>
+              <div class="product-card__rating">
+                <span style="color: #C5A880;">★★★★★</span>
+                <span>4.9 (47)</span>
+              </div>
+              <div class="product-card__price-row">
+                <span class="product-card__price">$110.00 USD</span>
+                <span class="product-card__hallmark">Hallmarked</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="product-card">
+            <div class="product-card__media">
+              <a href="pdp.html">
+                <img src="assets/images/cat-bracelets.jpg" alt="Padma Oxidized Silver Cuff" class="product-card__image-primary" loading="lazy">
+                <img src="assets/images/hero-editorial.jpg" alt="Padma on model" class="product-card__image-secondary" loading="lazy">
+              </a>
+              <button type="button" class="product-card__quick-add" onclick="window.Iraya.addItem({id: 104, title: 'Padma Oxidized Silver Cuff', price: 195.00, image: 'assets/images/cat-bracelets.jpg'})">
+                + Quick Add to Bag
+              </button>
+            </div>
+            <div class="product-card__content">
+              <span class="product-card__craft-tag">925 Silver · Antique Finish</span>
+              <h3 class="product-card__title"><a href="pdp.html">Padma Oxidized Silver Cuff</a></h3>
+              <div class="product-card__rating">
+                <span style="color: #C5A880;">★★★★★</span>
+                <span>4.8 (39)</span>
+              </div>
+              <div class="product-card__price-row">
+                <span class="product-card__price">$195.00 USD</span>
+                <span class="product-card__hallmark">Hallmarked</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Craft Story Strip -->
+    <section class="craft-strip section-spacing" id="craft">
+      <div class="page-width">
+        <div class="craft-strip__grid">
+          <div class="craft-strip__media">
+            <img 
+              src="assets/images/craft-artisan.jpg" 
+              alt="Indian Master Silversmith Handcrafting 925 Silver Filigree" 
+              class="craft-strip__image"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="craft-strip__content">
+            <span class="section-eyebrow" style="color: var(--color-gold-accent);">Centuries of Reverence</span>
+            <h2 class="craft-strip__title">Every curve is bent by hand. No two pieces are ever identical.</h2>
+            
+            <p class="craft-strip__quote">
+              "In Cuttack and Jaipur, master silversmiths pull pure silver into threads finer than silk, twisting each scroll with tweezers over a gentle flame."
+            </p>
+
+            <p class="craft-strip__text">
+              We work directly with multi-generational artisanal workshops across India, ensuring living ethical wages, safe atelier conditions, and the preservation of rare techniques like <em>Tarakasi</em> (fine wire filigree) and <em>Meenakari</em> (enamel artistry). All pieces are rigorously assayed and stamped 925 sterling silver.
+            </p>
+
+            <div>
+              <a href="our-craft.html" class="btn btn--gold">Discover Our Craft & Sourcing Standards →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Featured Collection Lookbook -->
+    <section class="section-spacing">
+      <div class="page-width">
+        <div class="lookbook-split">
+          <div class="lookbook-banner">
+            <img src="assets/images/hero-editorial.jpg" alt="Editorial Lookbook" loading="lazy">
+          </div>
+
+          <div class="lookbook-content" style="display: flex; flex-direction: column; justify-content: center;">
+            <span class="section-eyebrow">Editorial Lookbook</span>
+            <h2 class="section-title">The Moonlit Jaipur Capsule</h2>
+            <p class="section-description" style="margin-bottom: 24px;">
+              An homage to Rajasthan's nocturnal courtyards. Sculptural silver chokers and light-catching jaali hoops, oxidized to reveal depth and finished with anti-tarnish micro-coating for effortless daily wear.
+            </p>
+
+            <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+              <a href="plp.html" class="btn btn--primary">Explore the Lookbook</a>
+              <a href="plp.html" class="btn btn--secondary">Shop All Silver</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Gifting Block -->
+    <section class="section-spacing" id="gifting" style="padding-top: 0;">
+      <div class="page-width">
+        <div class="gifting-block">
+          <div class="gifting-grid">
+            <div class="gifting-media">
+              <img src="assets/images/gift-packaging.jpg" alt="Iraya Luxury Jewelry Gift Packaging" loading="lazy">
+            </div>
+
+            <div class="gifting-content">
+              <span class="section-eyebrow">Thoughtfully Packaged</span>
+              <h2 class="section-title">Every Piece Arrives Gift-Ready</h2>
+              <p class="section-description">
+                Whether honoring a milestone, celebrating Diwali, or gifting yourself, every Iraya order arrives in our signature gold-embossed ivory box with a velvet travel pouch and anti-tarnish storage tab.
+              </p>
+
+              <div class="gifting-perks">
+                <div class="gifting-perk">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span>Complimentary embossed gift box & velvet travel pouch included</span>
+                </div>
+                <div class="gifting-perk">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span>Personalized handwritten gift message option at checkout</span>
+                </div>
+                <div class="gifting-perk">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span>Includes Certificate of 925 Authenticity & Silver Polishing Cloth</span>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+                <a href="plp.html" class="btn btn--primary">Shop Curated Gifts</a>
+                <a href="plp.html" class="btn btn--secondary">Gifts Under $100</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7: US Trust Bar -->
+    <section class="trust-bar" id="trust" role="region" aria-label="Brand Assurances">
+      <div class="page-width">
+        <div class="trust-bar-grid">
+          <div class="trust-item">
+            <div class="trust-item__icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+              </svg>
+            </div>
+            <h3 class="trust-item__title">925 Hallmarked</h3>
+            <p class="trust-item__desc">Certified pure sterling silver stamped on every single piece.</p>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-item__icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+              </svg>
+            </div>
+            <h3 class="trust-item__title">Skin-Safe & Hypoallergenic</h3>
+            <p class="trust-item__desc">100% lead and nickel-free. Gentle on the most sensitive ears and skin.</p>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-item__icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+              </svg>
+            </div>
+            <h3 class="trust-item__title">Anti-Tarnish Shield</h3>
+            <p class="trust-item__desc">Advanced protective finish ensures lasting shine and low maintenance.</p>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-item__icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+              </svg>
+            </div>
+            <h3 class="trust-item__title">30-Day US Returns</h3>
+            <p class="trust-item__desc">Domestic US returns warehouse with zero hassle prepaid labels.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 8: Reviews & Press -->
+    <section class="section-spacing" id="reviews">
+      <div class="page-width">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">Worn & Cherished</span>
+          <h2 class="section-title">From Jaipur to New York</h2>
+          <p class="section-description">See how our US community styles handcrafted Indian silver for everyday elegance.</p>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">"The Aahana choker is pure poetry. You can instantly tell it's solid silver by its substantial weight, yet it feels completely weightless around the neck. Arrived in NYC in just 3 business days!"</p>
+            <div class="review-card__author">
+              <span>Ananya S. — New York, NY</span>
+              <span class="review-card__verified">✓ Verified Buyer</span>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">"I have extremely sensitive skin and react to almost all commercial earrings. These filigree drops caused zero irritation even after wearing them for 10 hours at a wedding. The packaging was immaculate."</p>
+            <div class="review-card__author">
+              <span>Maya P. — San Francisco, CA</span>
+              <span class="review-card__verified">✓ Verified Buyer</span>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">"The moonstone ring is a stunner. The jaali cutwork is so refined—it looks like an antique family heirloom passed down generations. Incredible customer service when I needed to exchange sizes."</p>
+            <div class="review-card__author">
+              <span>Claire D. — Austin, TX</span>
+              <span class="review-card__verified">✓ Verified Buyer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="press-strip">
+          <span class="press-logo">VOGUE</span>
+          <span class="press-logo">ELLE</span>
+          <span class="press-logo">HARPER'S BAZAAR</span>
+          <span class="press-logo">ARCHITECTURAL DIGEST</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 9: VIP Newsletter -->
+    <section class="newsletter-section">
+      <div class="newsletter-inner">
+        <span class="section-eyebrow" style="color: var(--color-gold-accent);">Private Access</span>
+        <h2 class="section-title" style="color: #FFFFFF; font-size: clamp(1.8rem, 2.5vw, 2.4rem);">Join the Archival Circle</h2>
+        <p class="section-description" style="color: #B8B5AE;">
+          Receive early private access to one-of-a-kind artisan drops, craft journals, and invitations to our intimate US trunk shows.
+        </p>
+
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Iraya Archival Circle.');">
+          <input 
+            type="email" 
+            class="newsletter-input" 
+            placeholder="Enter your email address" 
+            required
+            aria-label="Email address"
+          >
+          <button type="submit" class="btn btn--gold">Request Access</button>
+        </form>
+        <p class="newsletter-note">We respect your inbox. Only rare drops and craft stories. Unsubscribe anytime.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Section 10: Global Footer -->
+  <footer class="site-footer">
+    <div class="page-width">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 class="site-logo__text" style="font-size: 26px; color: #FFFFFF; margin-bottom: 8px;">IRAYA</h3>
+          <p style="font-size: var(--text-sm); color: var(--color-text-inverse-muted); line-height: 1.6; max-width: 320px;">
+            Authentic 925 sterling silver Indian handcrafted jewellery, designed with quiet modern reverence for discerning collectors in the United States.
+          </p>
+          <div class="footer-origin-badge">
+            <span>🇮🇳 Handcrafted in India</span>
+            <span>•</span>
+            <span>🇺🇸 Dispatched to US</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col__title">Customer Care</h4>
+          <ul class="footer-col__list">
+            <li><a href="#trust" class="footer-col__link">US Shipping & Duties</a></li>
+            <li><a href="#trust" class="footer-col__link">30-Day US Returns Portal</a></li>
+            <li><a href="our-craft.html" class="footer-col__link">Silver Care & Cleaning</a></li>
+            <li><a href="pdp.html" class="footer-col__link">Ring & Bracelet Size Guide</a></li>
+            <li><a href="#trust" class="footer-col__link">FAQs & Concierge</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col__title">Our Craft</h4>
+          <ul class="footer-col__list">
+            <li><a href="our-craft.html" class="footer-col__link">Artisan Lineages</a></li>
+            <li><a href="our-craft.html" class="footer-col__link">Tarakasi Filigree</a></li>
+            <li><a href="our-craft.html" class="footer-col__link">925 Hallmark Standards</a></li>
+            <li><a href="our-craft.html" class="footer-col__link">The Iraya Journal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col__title">Collections</h4>
+          <ul class="footer-col__list">
+            <li><a href="plp.html?cat=earrings" class="footer-col__link">Silver Earrings</a></li>
+            <li><a href="plp.html?cat=necklaces" class="footer-col__link">Chokers & Necklaces</a></li>
+            <li><a href="plp.html?cat=rings" class="footer-col__link">Jaali Cutwork Rings</a></li>
+            <li><a href="plp.html?cat=bracelets" class="footer-col__link">Cuffs & Bangles</a></li>
+            <li><a href="plp.html" class="footer-col__link">Curated Gift Sets</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="copyright">
+          © 2026 Iraya Studio LLC. All rights reserved. Prices displayed in USD.
+        </div>
+
+        <div class="payment-badges">
+          <span class="payment-badge">Shop Pay</span>
+          <span class="payment-badge">Apple Pay</span>
+          <span class="payment-badge">Google Pay</span>
+          <span class="payment-badge">PayPal</span>
+          <span class="payment-badge">Visa</span>
+          <span class="payment-badge">Mastercard</span>
+          <span class="payment-badge">Amex</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AJAX Cart Drawer -->
+  <div id="CartDrawer" class="cart-drawer" role="dialog" aria-modal="true" aria-label="Your Bag">
+    <div class="cart-drawer__header">
+      <h3 class="cart-drawer__title">
+        Your Bag
+        <span class="cart-drawer__count cart-count-badge">1</span>
+      </h3>
+      <button type="button" class="cart-drawer__close" aria-label="Close cart">✕</button>
+    </div>
+
+    <!-- Free US Shipping Threshold Progress -->
+    <div class="cart-shipping-bar" id="CartShippingBar">
+      <div class="cart-shipping-bar__text">
+        You have unlocked <strong>Free US Shipping!</strong>
+      </div>
+      <div class="cart-shipping-bar__track">
+        <div class="cart-shipping-bar__progress" style="width: 100%;"></div>
+      </div>
+    </div>
+
+    <div class="cart-drawer__body">
+      <!-- Dynamic Cart Items Container -->
+      <div class="cart-items" id="CartItemsList"></div>
+
+      <!-- Gift Wrap Option -->
+      <div class="cart-addons">
+        <label class="gift-wrap-toggle">
+          <input type="checkbox" id="GiftWrapCheckbox">
+          <div>
+            <strong>Add Signature Gift Box & Handwritten Note (+$5.00)</strong>
+            <div class="text-muted" style="font-size: 11px;">Arrives ready to gift with wax seal ribbon and personalized card.</div>
+          </div>
+        </label>
+        <textarea id="GiftMessageBox" class="gift-message-box" placeholder="Write your personalized gift message here..." rows="2"></textarea>
+      </div>
+
+      <!-- In-Cart Cross-Sell -->
+      <div class="cart-upsell">
+        <img src="assets/images/cat-necklaces.jpg" alt="Silver Polishing Cloth" class="cart-upsell__thumb">
+        <div class="cart-upsell__info">
+          <div class="cart-upsell__title">Microfiber Silver Polishing Cloth</div>
+          <div class="text-muted">$12.00 USD</div>
+        </div>
+        <button 
+          type="button" 
+          class="cart-upsell__btn"
+          onclick="window.Iraya.addItem({id: 201, title: 'Silver Polishing Cloth', variant: 'Standard', price: 12.00, image: 'assets/images/cat-necklaces.jpg'})"
+        >
+          + Add
+        </button>
+      </div>
+    </div>
+
+    <div class="cart-drawer__footer">
+      <div class="cart-subtotal">
+        <span class="cart-subtotal__label">Estimated Total</span>
+        <span class="cart-subtotal__value" id="CartSubtotalValue">$185.00 USD</span>
+      </div>
+
+      <div class="cart-duties-note">
+        <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+        <span>US Import Duties, Taxes & Free Shipping Included</span>
+      </div>
+
+      <button type="button" class="btn btn--primary btn--full cart-checkout-btn" onclick="alert('Redirecting to secure Shopify US Checkout...');">
+        Proceed to US Checkout
+      </button>
+
+      <div class="cart-accelerated-payment">
+        <span>Guaranteed Safe Checkout:</span>
+        <strong>Shop Pay</strong> · <strong>Apple Pay</strong> · <strong>PayPal</strong>
+      </div>
+    </div>
+  </div>
+
+  <div id="SiteOverlay" class="site-overlay" aria-hidden="true"></div>
+
+  <script src="assets/global.js"></script>
+</body>
+</html>

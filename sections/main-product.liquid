@@ -1,0 +1,253 @@
+<section class="pdp-container page-width" id="MainProduct-{{ section.id }}">
+  <!-- Breadcrumbs -->
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span>/</span>
+    <a href="/collections/all">Shop</a>
+    <span>/</span>
+    <span>{{ product.title | default: "The Aahana Filigree Choker" }}</span>
+  </nav>
+
+  <div class="pdp-grid">
+    <!-- Visual Media Gallery (Scroll-Snap Native on Mobile, Grid on Desktop) -->
+    <div class="pdp-gallery">
+      <div class="gallery-slider">
+        <div class="gallery-slide" id="Slide-1">
+          <img src="{{ 'cat-necklaces.jpg' | asset_url }}" alt="Studio Shot — Front View" loading="eager" fetchpriority="high">
+        </div>
+        <div class="gallery-slide" id="Slide-2">
+          <img src="{{ 'hero-editorial.jpg' | asset_url }}" alt="On-Model Lifestyle View" loading="lazy">
+        </div>
+        <div class="gallery-slide" id="Slide-3">
+          <img src="{{ 'craft-artisan.jpg' | asset_url }}" alt="Artisan Craftsmanship Detail" loading="lazy">
+        </div>
+        <div class="gallery-slide" id="Slide-4">
+          <img src="{{ 'gift-packaging.jpg' | asset_url }}" alt="Signature Packaging & Unboxing" loading="lazy">
+        </div>
+      </div>
+
+      <div class="gallery-pagination">
+        <span class="gallery-dot is-active"></span>
+        <span class="gallery-dot"></span>
+        <span class="gallery-dot"></span>
+        <span class="gallery-dot"></span>
+      </div>
+    </div>
+
+    <!-- Product Purchase Info Column -->
+    <div class="pdp-info">
+      <span class="pdp-tagline">Solid 925 Sterling Silver</span>
+      <h1 class="pdp-title">{{ product.title | default: "The Aahana Filigree Choker" }}</h1>
+
+      <div class="pdp-reviews-summary">
+        <div class="pdp-stars">★★★★★</div>
+        <span style="font-weight: 600;">4.9</span>
+        <span class="text-muted">(42 Verified Reviews)</span>
+        <span>•</span>
+        <a href="#reviews" class="text-muted" style="text-decoration: underline;">Read Reviews</a>
+      </div>
+
+      <!-- Provenance Micro-Badge -->
+      <div class="pdp-provenance-badge">
+        <span>📍</span>
+        <div>Handcrafted in <strong>Cuttack, India</strong> by Master Artisan Ramesh Mohapatra · <em>16 hours of silver wire filigree</em></div>
+      </div>
+
+      <!-- Price & Duties Row -->
+      <div class="pdp-price-row">
+        <span class="pdp-price">{{ product.price | default: 18500 | money }} USD</span>
+        <span class="pdp-duties-badge">US Import Duties & Taxes Included</span>
+      </div>
+
+      <p class="pdp-installments">
+        Or 4 interest-free payments of $46.25 with <strong>Shop Pay</strong> or <strong>Klarna</strong>.
+      </p>
+
+      <!-- US Sizing / Options Selector -->
+      <div class="pdp-option-group">
+        <div class="pdp-option-header">
+          <span class="pdp-option-label">Length: <strong id="SelectedSizeDisplay">16 inches (Choker)</strong></span>
+          <button type="button" class="pdp-size-guide-trigger" data-modal-open="SizeGuideModal">
+            <span>📏 Size Guide</span>
+          </button>
+        </div>
+
+        <div class="size-swatches">
+          <button type="button" class="size-swatch is-selected" data-value="16 inches (Choker)">16"</button>
+          <button type="button" class="size-swatch" data-value="18 inches (Collar)">18"</button>
+          <button type="button" class="size-swatch" data-value="20 inches (Princess)">20"</button>
+        </div>
+      </div>
+
+      <!-- Primary Action Buttons -->
+      <div class="pdp-actions">
+        <button 
+          type="button" 
+          id="MainProductCTA" 
+          class="btn btn--primary pdp-add-to-cart"
+          onclick="window.Iraya && window.Iraya.addItem({
+            id: {{ product.id | default: 101 }},
+            title: '{{ product.title | default: "The Aahana Filigree Choker" | escape }}',
+            variant: document.getElementById('SelectedSizeDisplay') ? document.getElementById('SelectedSizeDisplay').textContent : '16 inches',
+            price: 185.00,
+            image: 'assets/images/cat-necklaces.jpg'
+          })"
+        >
+          Add to Bag — $185.00 USD
+        </button>
+
+        <button 
+          type="button" 
+          class="btn pdp-buy-now"
+          onclick="window.Iraya && window.Iraya.openCartDrawer()"
+        >
+          Buy with Shop Pay
+        </button>
+      </div>
+
+      <!-- US Delivery Estimator -->
+      <div class="pdp-delivery-box">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"/>
+        </svg>
+        <div>
+          <div><strong>Free Express US Shipping</strong> on this item.</div>
+          <div class="text-muted" style="margin-top: 2px;">Estimated delivery to US in <strong>3–5 business days</strong> via DHL Express. No surprise customs fees.</div>
+        </div>
+      </div>
+
+      <!-- Accordion Specifications Tabs -->
+      <div class="pdp-accordions">
+        <div class="accordion-item is-active">
+          <button type="button" class="accordion-trigger">
+            <span>Details & Dimensions</span>
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="accordion-content">
+            <dl class="spec-list">
+              <dt>Metal</dt>
+              <dd>Solid 925 Sterling Silver</dd>
+              <dt>Total Weight</dt>
+              <dd>28.4 grams</dd>
+              <dt>Choker Width</dt>
+              <dd>8.5 mm filigree band</dd>
+              <dt>Clasp</dt>
+              <dd>Handmade S-hook closure with 2-inch extender</dd>
+              <dt>Hallmark</dt>
+              <dd>Official 925 BIS Assay Certification Stamp</dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button type="button" class="accordion-trigger">
+            <span>Materials & Skin Safety</span>
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="accordion-content">
+            <p>Guaranteed 100% hypoallergenic, nickel-free, and lead-free. Finished with a medical-grade, invisible organic anti-tarnish micro-shield that preserves natural silver brilliance while preventing oxidation from air and humidity.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button type="button" class="accordion-trigger">
+            <span>The Artisan & Craft Heritage</span>
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="accordion-content">
+            <p>Shaped through <em>Tarakasi</em>, a 500-year-old filigree technique indigenous to the silver city of Cuttack. Each piece requires two days of careful wire annealing, scrolling, and microscopic soldering by generational artisans.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button type="button" class="accordion-trigger">
+            <span>Care Instructions</span>
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="accordion-content">
+            <p>Wipe with the enclosed microfiber polishing cloth after wear. Store inside the airtight anti-tarnish velvet pouch when not in use. Avoid direct contact with bleach, chlorine, and harsh chemical perfumes.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button type="button" class="accordion-trigger">
+            <span>US Shipping, Duties & 30-Day Returns</span>
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="accordion-content">
+            <p>Orders are dispatched with DHL Express or FedEx Priority. All US customs duties and import taxes are 100% pre-paid by Iraya. Enjoy 30 days to try your piece at home; domestic US returns are processed through our California logistics hub.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Mobile Action Bar -->
+  {% render 'sticky-mobile-bar', product: product, current_variant: product.selected_or_first_available_variant %}
+</section>
+
+<!-- Size Guide Modal -->
+<div id="SizeGuideModal" class="modal-dialog" role="dialog" aria-modal="true" aria-label="Size Guide">
+  <div class="modal-header">
+    <h3 class="modal-title">US Jewelry Sizing Guide</h3>
+    <button type="button" class="cart-drawer__close" data-modal-close aria-label="Close modal">✕</button>
+  </div>
+  <div class="modal-body">
+    <p class="text-sm text-muted">All Iraya necklaces, rings, and bracelets conform to standard US sizing measurements.</p>
+    
+    <table class="size-table">
+      <thead>
+        <tr>
+          <th>US Size</th>
+          <th>Circumference (Inches)</th>
+          <th>Diameter (mm)</th>
+          <th>Indian Standard</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>US 5</td>
+          <td>1.94"</td>
+          <td>15.7 mm</td>
+          <td>Size 9–10</td>
+        </tr>
+        <tr>
+          <td>US 6</td>
+          <td>2.04"</td>
+          <td>16.5 mm</td>
+          <td>Size 12</td>
+        </tr>
+        <tr>
+          <td>US 7</td>
+          <td>2.14"</td>
+          <td>17.3 mm</td>
+          <td>Size 14</td>
+        </tr>
+        <tr>
+          <td>US 8</td>
+          <td>2.24"</td>
+          <td>18.1 mm</td>
+          <td>Size 16–17</td>
+        </tr>
+        <tr>
+          <td>US 9</td>
+          <td>2.35"</td>
+          <td>19.0 mm</td>
+          <td>Size 19</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div style="margin-top: 20px; padding: 14px; background: var(--color-bg-subtle); border-radius: 4px;">
+      <h4 style="font-size: 13px; font-weight: 600; margin-bottom: 4px;">Printable Ring Sizer Available</h4>
+      <p class="text-xs text-muted">Download our 1:1 scale printable PDF ring sizer to measure existing rings with 100% accuracy.</p>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Main Product",
+  "settings": []
+}
+{% endschema %}

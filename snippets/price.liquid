@@ -1,0 +1,29 @@
+{%- comment -%}
+  Renders a price element in USD with duties statement
+  Accepts:
+  - product: {Object} Product Liquid object
+  - use_variant: {Boolean}
+{%- endcomment -%}
+
+{%- liquid
+  if use_variant
+    assign target = product.selected_or_first_available_variant
+  else
+    assign target = product
+  endif
+
+  assign compare_at_price = target.compare_at_price
+  assign price = target.price | default: 14500
+-%}
+
+<div class="price-wrapper">
+  <span class="price-item price-item--regular font-serif">
+    {{ price | money }} USD
+  </span>
+  {%- if compare_at_price > price -%}
+    <s class="price-item price-item--compare">
+      {{ compare_at_price | money }} USD
+    </s>
+  {%- endif -%}
+  <span class="pdp-duties-badge">Duties Included</span>
+</div>

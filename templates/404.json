@@ -1,0 +1,22 @@
+{
+  "name": "404 Not Found",
+  "sections": {
+    "main": {
+      "type": "hero-banner",
+      "settings": {
+        "eyebrow": "Page Not Found",
+        "heading": "Lost in the Courtyard",
+        "subheading": "The page or collection you are looking for has moved or no longer exists. Explore our bestselling silver heirlooms below.",
+        "button_text": "Return to Store",
+        "button_link": "/"
+      }
+    },
+    "recommendations": {
+      "type": "bestsellers",
+      "settings": {
+        "products_to_show": 4
+      }
+    }
+  },
+  "order": ["main", "recommendations"]
+}

@@ -1,0 +1,208 @@
+<section class="plp-container page-width" id="MainCollection-{{ section.id }}">
+  <div class="plp-header">
+    <span class="section-eyebrow">925 Sterling Silver</span>
+    <h1 class="section-title" style="font-size: clamp(2rem, 3.5vw, 3rem);">
+      {{ collection.title | default: "All Handcrafted Silver" }}
+    </h1>
+    <p class="section-description" style="max-width: 680px;">
+      {{ collection.description | default: "Authentic Indian sterling silver jewellery handcrafted by generational artisans. Designed for modern daily wear in the USA with anti-tarnish protection." }}
+    </p>
+  </div>
+
+  <!-- Filter & Sort Toolbar -->
+  <div class="plp-toolbar">
+    <button type="button" class="filter-trigger-btn" data-filter-trigger>
+      <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/>
+      </svg>
+      <span>Filter & Sort (4 Active)</span>
+    </button>
+
+    <div class="sort-select-wrap">
+      <span class="text-muted" style="display: none; @media(min-width:600px){display:inline;}">Sort By:</span>
+      <select class="sort-select" aria-label="Sort products">
+        <option value="featured">Featured / Bestselling</option>
+        <option value="price-low">Price: Low to High</option>
+        <option value="price-high">Price: High to Low</option>
+        <option value="newest">Newest Drops</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Product Grid -->
+  <div class="product-grid">
+    <!-- Item 1: Earrings -->
+    <div class="product-card">
+      <div class="product-card__media">
+        <a href="/products/chandrika-filigree-drops">
+          <img src="{{ 'cat-earrings.jpg' | asset_url }}" alt="Chandrika Filigree Drops" class="product-card__image-primary" loading="lazy">
+          <img src="{{ 'hero-editorial.jpg' | asset_url }}" alt="Chandrika on model" class="product-card__image-secondary" loading="lazy">
+        </a>
+        <div class="product-card__badges">
+          <span class="badge badge--gold">Bestseller</span>
+        </div>
+        <button type="button" class="product-card__quick-add" onclick="window.Iraya && window.Iraya.addItem({id: 102, title: 'Chandrika Filigree Drops', price: 135.00, image: 'assets/images/cat-earrings.jpg'})">
+          + Quick Add to Bag
+        </button>
+      </div>
+      <div class="product-card__content">
+        <span class="product-card__craft-tag">925 Silver · Tarakasi</span>
+        <h3 class="product-card__title"><a href="/products/chandrika-filigree-drops">Chandrika Filigree Drops</a></h3>
+        <div class="product-card__rating">
+          <span style="color: #C5A880;">★★★★★</span>
+          <span>5.0 (62)</span>
+        </div>
+        <div class="product-card__price-row">
+          <span class="product-card__price">$135.00 USD</span>
+          <span class="product-card__hallmark">Hallmarked</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 2: Necklace -->
+    <div class="product-card">
+      <div class="product-card__media">
+        <a href="/products/aahana-filigree-choker">
+          <img src="{{ 'cat-necklaces.jpg' | asset_url }}" alt="The Aahana Filigree Choker" class="product-card__image-primary" loading="lazy">
+          <img src="{{ 'hero-editorial.jpg' | asset_url }}" alt="The Aahana on model" class="product-card__image-secondary" loading="lazy">
+        </a>
+        <div class="product-card__badges">
+          <span class="badge badge--gold">Bestseller</span>
+        </div>
+        <button type="button" class="product-card__quick-add" onclick="window.Iraya && window.Iraya.addItem({id: 101, title: 'The Aahana Filigree Choker', price: 185.00, image: 'assets/images/cat-necklaces.jpg'})">
+          + Quick Add to Bag
+        </button>
+      </div>
+      <div class="product-card__content">
+        <span class="product-card__craft-tag">925 Silver · Cuttack Filigree</span>
+        <h3 class="product-card__title"><a href="/products/aahana-filigree-choker">The Aahana Filigree Choker</a></h3>
+        <div class="product-card__rating">
+          <span style="color: #C5A880;">★★★★★</span>
+          <span>4.9 (84)</span>
+        </div>
+        <div class="product-card__price-row">
+          <span class="product-card__price">$185.00 USD</span>
+          <span class="product-card__hallmark">Hallmarked</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 3: Ring -->
+    <div class="product-card">
+      <div class="product-card__media">
+        <a href="/products/jaali-moonstone-ring">
+          <img src="{{ 'cat-rings.jpg' | asset_url }}" alt="The Jaali Moonstone Ring" class="product-card__image-primary" loading="lazy">
+          <img src="{{ 'craft-artisan.jpg' | asset_url }}" alt="Jaali Ring on hand" class="product-card__image-secondary" loading="lazy">
+        </a>
+        <button type="button" class="product-card__quick-add" onclick="window.Iraya && window.Iraya.addItem({id: 103, title: 'The Jaali Moonstone Ring', price: 110.00, image: 'assets/images/cat-rings.jpg'})">
+          + Quick Add to Bag
+        </button>
+      </div>
+      <div class="product-card__content">
+        <span class="product-card__craft-tag">925 Silver · Jaipur Cutwork</span>
+        <h3 class="product-card__title"><a href="/products/jaali-moonstone-ring">The Jaali Moonstone Ring</a></h3>
+        <div class="product-card__rating">
+          <span style="color: #C5A880;">★★★★★</span>
+          <span>4.9 (47)</span>
+        </div>
+        <div class="product-card__price-row">
+          <span class="product-card__price">$110.00 USD</span>
+          <span class="product-card__hallmark">Hallmarked</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 4: Bracelet -->
+    <div class="product-card">
+      <div class="product-card__media">
+        <a href="/products/padma-oxidized-cuff">
+          <img src="{{ 'cat-bracelets.jpg' | asset_url }}" alt="Padma Oxidized Silver Cuff" class="product-card__image-primary" loading="lazy">
+          <img src="{{ 'hero-editorial.jpg' | asset_url }}" alt="Padma on model" class="product-card__image-secondary" loading="lazy">
+        </a>
+        <button type="button" class="product-card__quick-add" onclick="window.Iraya && window.Iraya.addItem({id: 104, title: 'Padma Oxidized Silver Cuff', price: 195.00, image: 'assets/images/cat-bracelets.jpg'})">
+          + Quick Add to Bag
+        </button>
+      </div>
+      <div class="product-card__content">
+        <span class="product-card__craft-tag">925 Silver · Antique Finish</span>
+        <h3 class="product-card__title"><a href="/products/padma-oxidized-cuff">Padma Oxidized Silver Cuff</a></h3>
+        <div class="product-card__rating">
+          <span style="color: #C5A880;">★★★★★</span>
+          <span>4.8 (39)</span>
+        </div>
+        <div class="product-card__price-row">
+          <span class="product-card__price">$195.00 USD</span>
+          <span class="product-card__hallmark">Hallmarked</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Rich SEO Content Block -->
+  <div class="plp-seo-block">
+    <div class="plp-seo-block__inner">
+      <span class="section-eyebrow">Artisanal Pedigree</span>
+      <h3>The Art of Indian Sterling Silver Jewellery</h3>
+      <p>
+        Indian silvercraft dates back over five thousand years to the Indus Valley civilization. Unlike mass-manufactured cast jewelry, each Iraya piece is constructed from high-purity 925 sterling silver alloyed with copper for structural durability, completely free of nickel and lead.
+      </p>
+      <p>
+        Whether wearing delicate <em>Tarakasi</em> wire earrings to a US business meeting or layering an oxidized silver choker over a cocktail dress, Iraya pieces provide the perfect harmony of heirloom cultural storytelling and contemporary Western minimalism.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Faceted Filter Drawer -->
+<div id="FilterDrawer" class="filter-drawer" role="dialog" aria-modal="true" aria-label="Filters">
+  <div class="filter-drawer__header">
+    <h3 class="filter-drawer__title">Filters</h3>
+    <button type="button" class="cart-drawer__close filter-drawer__close" aria-label="Close filters">✕</button>
+  </div>
+
+  <div class="filter-drawer__body">
+    <!-- Category Filter -->
+    <div class="filter-group">
+      <h4 class="filter-group__title">Category</h4>
+      <div class="filter-options">
+        <label class="filter-option"><input type="checkbox" checked> Earrings & Jhumkas (18)</label>
+        <label class="filter-option"><input type="checkbox" checked> Necklaces & Chokers (12)</label>
+        <label class="filter-option"><input type="checkbox"> Rings & Jaali (15)</label>
+        <label class="filter-option"><input type="checkbox"> Cuffs & Bangles (8)</label>
+      </div>
+    </div>
+
+    <!-- Craft Filter -->
+    <div class="filter-group">
+      <h4 class="filter-group__title">Craft Technique</h4>
+      <div class="filter-options">
+        <label class="filter-option"><input type="checkbox"> Tarakasi Wire Filigree</label>
+        <label class="filter-option"><input type="checkbox"> Meenakari Enameling</label>
+        <label class="filter-option"><input type="checkbox"> Antique Oxidized Silver</label>
+        <label class="filter-option"><input type="checkbox"> Jadau Kundan Silver</label>
+      </div>
+    </div>
+
+    <!-- Price Filter -->
+    <div class="filter-group">
+      <h4 class="filter-group__title">Price (USD)</h4>
+      <div class="filter-options">
+        <label class="filter-option"><input type="checkbox"> Under $100</label>
+        <label class="filter-option"><input type="checkbox"> $100 – $200</label>
+        <label class="filter-option"><input type="checkbox"> $200 – $350</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="filter-drawer__footer">
+    <button type="button" class="btn btn--secondary" style="flex: 1;" onclick="window.Iraya.closeFilterDrawer()">Clear</button>
+    <button type="button" class="btn btn--primary" style="flex: 2;" onclick="window.Iraya.closeFilterDrawer()">Apply (4)</button>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Main Collection",
+  "settings": []
+}
+{% endschema %}

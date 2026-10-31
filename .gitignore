@@ -1,0 +1,24 @@
+# Shopify CLI temporary files
+.shopify/
+*.tmp
+*.log
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Node / Build artifacts
+node_modules/
+dist/
+.cache/
+
+# Local credentials
+.env
+.env.local
+.env.*.local
+shopify.theme.env
+
+# Theme packaged zip files
+*.zip
